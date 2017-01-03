@@ -1,5 +1,28 @@
 header
-	nav
+	font-family: $font-main
+	.navbar
 		border-radius: 0
-		background-color: #0000000
-		font-family: 
+		background-color: $color-primary 
+		.nav
+			font-size: 20px
+			>li>a
+				color: $color-secondary
+				&:hover
+					color: $color-secondary
+					&:after
+						width: 100%
+				&:after
+					content: ""
+					display: table
+					margin: 3px auto 0
+					width: 0%
+					height: 3px
+					background-color: $color-secondary
+					+transition(.3s)	
+		.navbar-brand
+			font-size: 40px
+			text-transform: uppercase
+			color: $color-secondary
+			font-weight: 900
+			padding-left: 40px
+			padding-right: 40px

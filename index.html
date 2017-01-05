@@ -44,8 +44,10 @@
 					<h1>Web Development</h1>
 					<h2>HTML - CSS - Bootstrap - JavaScript  - PHP - Wordpress</h2>
 					<h2 id="h2Portfolio">
-						View Portfolio<br>
-						<span class="fa fa-chevron-down"></span>	
+						<a href="#portfolio">
+							View Portfolio<br>
+							<span class="fa fa-chevron-down"></span>
+						</a>		
 					</h2>
 				</header>
 			</div>		
@@ -105,5 +107,16 @@
 
 		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>		
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script tyoe="text/javascript">
+			$("ul.navbar-nav > li > a").on("click", function(event){
+				event.preventDefault();
+				$("html, body").animate({scrollTop:$(this.hash).offset().top}, 1000);
+			})
+
+			$("#intro a").on("click", function(event){
+				event.preventDefault();
+				$("html, body").animate({scrollTop:$(this.hash).offset().top}, 1000);
+			})
+		</script>
 	</body>
 </html>

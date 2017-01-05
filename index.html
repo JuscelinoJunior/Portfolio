@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div class="topo">
-		<header id="menu">
+		<header id="menu" class="fixed">
 			<div class="container">
 			<div class="col-md-12">
 			<nav class="navbar navbar-default">
@@ -119,7 +119,7 @@
 				$("html, body").animate({scrollTop:$(this.hash).offset().top}, 1000);
 			})
 
-			$(window).scroll(function(){
+			/*$(window).scroll(function(){
 				var scrollTopAtual = $(this).scrollTop();
 				if(scrollTopAtual > 100){
 					$('.navbar').addClass('navbar-fixed-top');
@@ -127,7 +127,7 @@
 				else{
 					$('.navbar').removeClass('navbar-fixed-top');
 				}
-			})
+			})*/
 		</script>
 	</body>
 </html>

@@ -9,6 +9,8 @@
 	<body>
 		<div class="topo">
 		<header id="menu">
+			<div class="container">
+			<div class="col-md-12">
 			<nav class="navbar navbar-default">
 			  <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,17 +27,19 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#">Home</a></li>
-			        <li><a href="#">Portfolio</a></li>
-			        <li><a href="#">Perfil</a></li>
-			        <li><a href="#">Contato</a></li>   	
+			        <li><a href="#intro">Home</a></li>
+			        <li><a href="#portfolio">Portfolio</a></li>
+			        <li><a href="#perfil">Perfil</a></li>
+			        <li><a href="#contato">Contato</a></li>   	
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>
+			</div>
+			</div>
 		</header>
 		<main>
-			<div class="intro">
+			<div id="intro">
 				<header id="tituloIntro">
 					<h1>Web Development</h1>
 					<h2>HTML - CSS - Bootstrap - JavaScript  - PHP - Wordpress</h2>
@@ -44,9 +48,7 @@
 						<span class="fa fa-chevron-down"></span>	
 					</h2>
 				</header>
-			</div>
-		</div>	
-		</main>	
+			</div>		
 			<section id="portfolio">
 				<li style="background-color: #000000"><a href="#"></a></li>
 				<li style="background-color: #ffffff"><a href="#"></a></li>
@@ -59,36 +61,40 @@
 				<li style="background-color: pink"><a href="#"></a></li>
 			</section>
 			<section id="perfil">
-				<div id="perfilConteudo" class="clearfix">
-					<img src="images/perfil.jpg">
-					<div id="textoPerfil">Olá, meu nome é Juscelino Junior, tenho 18 anos e resido em Nova Iguaçu, Rio de Janeiro. Sou Desenvolvedor Web, realizo o serviço ideal para as suas ambições, sites institucionais, sistemas, blogs e etc. Usando as tecnologias mais recentes, com o projeto idealizado em Photoshop para aprovação prévia, e se você quiser gerenciar o conteúdo do seu site, também trabalho com Wordpress. Entre em contato para um orçamento.</div>
-					<div id="skillsPerfil">
-						<span class="fa fa-html5"></span> <span class="fa fa-css3"></span> <span class="icon icon-javascript-alt"></span> <span class="icon icon-php"></span> <span class="fa fa-wordpress"></span>
+				<div class="container">
+					<div id="perfilConteudo" class="clearfix">
+						<img src="images/perfil.jpg">
+						<div id="textoPerfil">Olá, meu nome é Juscelino Junior, tenho 18 anos e resido em Nova Iguaçu, Rio de Janeiro. Sou Desenvolvedor Web, realizo o serviço ideal para as suas ambições, sites institucionais, sistemas, blogs e etc. Usando as tecnologias mais recentes, com o projeto idealizado em Photoshop para aprovação prévia, e se você quiser gerenciar o conteúdo do seu site, também trabalho com Wordpress. Entre em contato para um orçamento.</div>
+						<div id="skillsPerfil">
+							<span class="fa fa-html5"></span> <span class="fa fa-css3"></span> <span class="icon icon-javascript-alt"></span> <span class="icon icon-php"></span> <span class="fa fa-wordpress"></span>
+						</div>
 					</div>
-				</div>
+				</div>	
 			</section>
 			<section id="contato">
-			<div class="formClass">
-				<form>
-					<div class="form-group">
-						<label for="name">Nome</label>
-						<input type="text" class="form-control" id="name" name="name" placeholder="" required>
+				<div class="container">
+					<div class="formClass">
+						<form>
+							<div class="form-group">
+								<label for="name">Nome</label>
+								<input type="text" class="form-control" id="name" name="name" placeholder="" required>
+							</div>	
+							
+							<div class="form-group">
+								<label for="name">E-mail</label>
+								<input type="text" class="form-control" id="email" name="email" placeholder="" required>
+							</div>	
+							
+							<div class="form-group">
+								<label for="msg">Mensagem</label>
+								<textarea id="msg" class="form-control" name="msg" cols="50" rows="10" required></textarea>
+							</div>	
+						</form>
+						<div id="socialContato">
+							<span class="fa fa-facebook"></span> <span class="fa fa-github"></span>
+						</div>
 					</div>	
-					
-					<div class="form-group">
-						<label for="name">E-mail</label>
-						<input type="text" class="form-control" id="email" name="email" placeholder="" required>
-					</div>	
-					
-					<div class="form-group">
-						<label for="msg">Mensagem</label>
-						<textarea id="msg" class="form-control" name="msg" cols="50" rows="10" required></textarea>
-					</div>	
-				</form>
-				<div id="socialContato">
-					<span class="fa fa-facebook"></span> <span class="fa fa-github"></span>
 				</div>
-			</div>	
 			</section>
 			<footer>
 				<div id="footer">

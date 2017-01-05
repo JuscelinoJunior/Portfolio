@@ -52,15 +52,15 @@
 				</header>
 			</div>		
 			<section id="portfolio">
-				<li style="background-color: #000000"><a href="#"></a></li>
-				<li style="background-color: #ffffff"><a href="#"></a></li>
-				<li style="background-color: #222"><a href="#"></a></li>
-				<li style="background-color: red"><a href="#"></a></li>
-				<li style="background-color: green"><a href="#"></a></li>
-				<li style="background-color: yellow"><a href="#"></a></li>
-				<li style="background-color: gray"><a href="#"></a></li>
-				<li style="background-color: black"><a href="#"></a></li>
-				<li style="background-color: pink"><a href="#"></a></li>
+				<a href="#"><li style="background-color: #000000"><img src="images/wp.png"></li></a>
+				<a href="#"><li style="background-color: #ffffff"><img src="images/wp.png"></li></a>
+				<a href="#"><li style="background-color: #222"></li></a>
+				<a href="#"><li style="background-color: red"></li></a>
+				<a href="#"><li style="background-color: green"></li></a>
+				<a href="#"><li style="background-color: yellow"></li></a>
+				<a href="#"><li style="background-color: gray"></li></a>
+				<a href="#"><li style="background-color: black"></li></a>
+				<a href="#"><li style="background-color: pink"></li></a>
 			</section>
 			<section id="perfil">
 				<div class="container">
@@ -116,6 +116,16 @@
 			$("#intro a").on("click", function(event){
 				event.preventDefault();
 				$("html, body").animate({scrollTop:$(this.hash).offset().top}, 1000);
+			})
+
+			$(window).scroll(function(){
+				var scrollTopAtual = $(this).scrollTop();
+				if(scrollTopAtual > 100){
+					$('.navbar').addClass('navbar-fixed-top');
+				}
+				else{
+					$('.navbar').removeClass('navbar-fixed-top');
+				}
 			})
 		</script>
 	</body>

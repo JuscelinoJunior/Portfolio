@@ -159,8 +159,12 @@
 			$(".owl-carousel").owlCarousel({
 				slideSpeed: 300,
 				paginationSpeed: 400,
-				singleItem: true
+				singleItem: true,
+				navigation: true
 			})
+
+			$( ".owl-prev").html('<span class="fa fa-chevron-left"></span>');
+			$( ".owl-next").html('<span class="fa fa-chevron-right"></span>');
 		</script>
 	</body>
 </html>
